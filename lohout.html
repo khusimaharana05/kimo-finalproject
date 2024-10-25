@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Page</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <div class="logout-box">
+        <h2>You are successfully logged out</h2>
+        <button id="loginAgainBtn"onclick="window.location.href='login.html'">Login Again</button>
+    </div>
+    <script>
+        
+        localStorage.removeItem('loggedIn');
+    
+        
+        document.getElementById('loginAgainBtn').addEventListener('click', function() {
+            window.location.href = 'login.html'; 
+        });
+    </script>
+    
+</body>
+</html>

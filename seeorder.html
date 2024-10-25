@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Your Order</title>
+    <link rel="stylesheet" href="seeorder.css">
+</head>
+<body>
+    <header>
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+        <h1>Your Order</h1>
+        <a href="listing.html">Back to Listing</a>
+        <a href="lohout.html">Logout</a>
+    </header>
+    <div class="order-review">
+        <h2>Placed Orders</h2>
+        <ul id="order-items"></ul>
+    </div>
+
+    <script>
+        function loadOrder() {
+            let order = JSON.parse(localStorage.getItem('order')) || ["No orders placed"];
+            const orderItems = document.getElementById('order-items');
+            order.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                orderItems.appendChild(li);
+            });
+        }
+
+        window.onload = loadOrder;
+    </script>
+</body>
+</html>

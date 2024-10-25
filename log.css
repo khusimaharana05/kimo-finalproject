@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #64a8ec;
+    background: linear-gradient(135deg, #b6daff, #0478ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    width: 350px;
+    padding: 50px;
+    position: relative;
+    background: #49c1f8;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.login-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.login-box h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    background: transparent;
+}
+
+.user-box input:focus {
+    border-bottom-color: #ffffff;
+}
+
+.user-box label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+button {
+    background: linear-gradient(135deg, #51a8ff, #0080ff);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #51a8ff, #0080ff);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#error-message {
+    color: #e74c3c;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}

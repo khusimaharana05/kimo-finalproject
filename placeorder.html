@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order</title>
+    <link rel="stylesheet" href="placeorder.css">
+</head>
+<body>
+    <header>
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+        <h1>Place Your Order</h1>
+        <a href="listing.html">Back to Listing</a>
+        <a href="seeorder.html">See Order</a>
+        <a href="logout.html">Logout</a>
+    </header>
+    <div class="order-form">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="placeOrder()">Place Order</button>
+    </div>
+
+    <script>
+        function loadCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartItems = document.getElementById('cart-items');
+            cartItems.innerHTML = '';
+            
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                const img = document.createElement('img');
+        img.src = item.image;
+        img.alt = item.name;
+        img.style.width = '100px';
+        img.style.height = '100px';
+        img.style.marginRight = '10px';
+        li.appendChild(img);
+        li.appendChild(document.createTextNode(item.name));
+
+        cartItems.appendChild(li);
+            });
+        }
+        function addToCart(productName, productImage) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ name: productName, image: productImage });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(productName + " has been added to your cart!");
+}
+
+
+        function placeOrder() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            localStorage.setItem('order', JSON.stringify(cart));
+            localStorage.removeItem('cart'); 
+            alert("Your order has been placed!");
+            window.location.href = 'seeorder.html';
+        }
+
+        window.onload = loadCart;
+    </script>
+</body>
+</html>

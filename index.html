@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAZON</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script>
+        window.onload = function() {
+            
+            const loggedIn = localStorage.getItem('loggedIn');
+            if (!loggedIn) {
+                window.location.href = 'login.html'; 
+            }
+        };
+    </script>
+    
+</head>
+<body>
+    <header id="khusi">
+        <div class="navbar">
+            <!---navbar----------------->
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <!---nav-address----------------->
+            <div class="nav-address border">
+                <p class="add-first">deliver to</p>
+                    <div class="add-icon">
+                        <i class="fa-regular fa-location-dot"></i>
+                        <p class="add-second">India</p>
+                    </div>
+            </div>
+            <!---nav-search------------------>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option >All</option>
+                    <option >Electronics</option>
+                    <option >Dress</option>
+                    <option >shoes</option>
+                    <input placeholder="Search Amazon"class="search-input">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </select>
+            </div>
+            <!---nav-signin--->
+            <div class="nav-signin border">
+            <a href="login,html"><p><span>Hello, sign in</span></p></a>
+            <p class="nav-sec">Account & Links</p>
+            </div>
+            <!---nav-return--->
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-sec">& Orders</p>
+            </div>
+            <!---nav-cart--->
+            <div class="nav-cart border">
+                <i class="fa-regular fa-cart-shopping" alt="cart" color="white"></i>
+            </div>
+        </div>
+        <!---pannel----------------->
+        <div class="pannel">
+            <div class="pannel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="pannel-opt">
+                <p>Today's deals</p>
+                <p>Customer Service</p>
+                <p>Registery</p>
+                <p>Gift Cards</p>
+                <p>Sell</p>
+            </div>
+            <div class="pannel-deals">
+                Shop deals in Electronics
+            </div>
+        </div>
+    </header>
+    <!-----------hero-sec-------------->
+    <div class="hero-sec">
+        <div class="hero-msg">
+            <p>Discover the future of fashion with these limited-time offers.  </p>
+            <a href="listing.html"> Shop now</a>
+        </div>
+    </div>
+    <!-----------shop-sec-------------->
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>Towels</h2>
+                <div class="box-image" style="background-image: url('box1_image.jpg');">
+
+                </div>
+                <a  href="listing.html" class="color">See more</a>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Health &personal care</h2>
+                <div class="box-image" style="background-image: url('box2_image.jpg');">
+
+                </div>
+                <a  href="listing.html"class="color">See more</a>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Home decor</h2>
+                <div class="box-image" style="background-image: url('box3_image.jpg');">
+
+                </div>
+                <a  href="listing.html"class="color">See more</a>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h2>Electronic device</h2>
+                <div class="box-image" style="background-image: url('box4_image.jpg');">
+
+                </div>
+                <a  href="listing.html" class="color">See more</a>
+            </div>
+        </div>
+    </div>
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>Beauty essential</h2>
+                <div class="box-image" style="background-image: url('box5_image.jpg');">
+
+                </div>
+                <a  href="listing.html"class="color">See more</a>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Pets care</h2>
+                <div class="box-image" style="background-image: url('box6_image.jpg');">
+
+                </div>
+                <a  href="listing.html"class="color">See more</a>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Trevel care</h2>
+                <div class="box-image" style="background-image: url('box7_image.jpg');">
+
+                </div>
+                <a  href="listing.html"class="color">See more</a>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h2>women's clothing</h2>
+                <div class="box-image" style="background-image: url('box8_image.jpg');">
+
+                </div>
+                <a  href="listing.html"class="color">See more</a>
+            </div>
+        </div>
+    </div>
+    <footer class="">
+        <div class="foot-pannel">
+            <a href="#khusi">Back to Top</a>
+        </div>
+        <div class="foot-pannel2">
+            <ul>    
+                <p>Get to know</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon science</a>
+            </ul>
+            <ul>    
+                <p>Make Money With Us</p>
+                <a>Sell products on Amazon</a>
+                <a>sell on amazon business</a>
+                <a>sell apps on Amazon</a>
+                <a>Advertise your product</a>
+                <a>self-published with us</a>
+                <a>Host on Amazon Hub</a>
+            </ul>
+            <ul>    
+                <p>Amazon Payment products</p>
+                <a>Reload your business</a>
+                <a>Shop with Points</a>
+                <a>Amazon business card</a>
+                <a>Amazon currency converter</a>
+            </ul>
+            <ul>    
+                <p>Let Us Help You</p>
+                <a>Help</a>
+                <a>Amazon Assistant</a>
+                <a>Your orders</a>
+                <a>Replacement & Return</a>
+                <a>your Account</a>
+                <a>Amazon &covid-19</a>
+                <a href="lohout.html">logout</a>
+            </ul>
+        </div>
+        <div class="foot-pannel3">
+            <div class="logo"></div>
+        </div>
+        <div class="foot-pannel4">
+            <div class="pages">
+                <a>Conditions of Use Sale</a>
+                <a>privacy notice</a>
+                <a>Your ad privacy choices</a>
+                
+            </div>
+            <div class="copyright">
+                © 1996-2024, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

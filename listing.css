@@ -1,0 +1,232 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.product-list {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-list h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-list ul {
+    list-style: none;
+}
+
+.product-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-list li h3 {
+    margin: 0;
+}
+
+.product-list li p {
+    margin: 5px 0;
+    color: #666;
+}
+
+button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 14px;
+    }
+    
+    .product-list {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+.nav-logo{
+    height: 56px;
+    width: 100px;
+}
+.logo{
+    background-image: url( "amazon_logo.png");
+    height: 56px;
+    width: 100%;
+    background-size: cover;
+}
+.border{
+    border: 2px solid transparent;
+}
+.product-image {
+    width: 200px;  
+    height: 200px;  
+    margin-bottom: 10px; 
+    background-size: cover;
+}
+.image1{
+    background-image: url( "images/image 1.jpeg");
+}
+
+.image2{
+    background-image: url( "images/image 2.jpeg");
+}
+
+.image3{
+    background-image: url( "images/image 3.jpeg");
+}
+
+.image4{
+    background-image: url( "images/image 4.jpeg");
+}
+
+.image5{
+    background-image: url( "images/image 5.jpeg");
+}
+
+.image6{
+    background-image: url( "images/image 6.jpeg");
+}
+
+.image7{
+    background-image: url( "images/image 7.jpeg");
+}
+
+.image8{
+    background-image: url( "images/image 8.jpeg");
+}
+
+.image9{
+    background-image: url( "images/image 9.jpeg");
+}
+
+.image10{
+    background-image: url( "images/image 10.webp");
+}
+
+.image11{
+    background-image: url( "images/image 11.jpeg");
+}
+
+.image12{
+    background-image: url( "images/image 12.jpeg");
+}
+
+.image13{
+    background-image: url( "images/image 13.jpeg");
+}
+
+.image14{
+    background-image: url( "images/image 14.jpeg");
+}
+
+.image15{
+    background-image: url( "images/image 15.jpeg");
+}
+
+.image16{
+    background-image: url( "images/image 16.jpeg");
+}
+
+.image17{
+    background-image: url( "images/image 17.jpeg");
+}
+
+.image18{
+    background-image: url( "images/image 18.jpeg");
+}
+
+.image19{
+    background-image: url( "images/image 19.jpeg");
+}
+
+.image20{
+    background-image: url( "images/image 20.jpeg");
+}
+
+.image21{
+    background-image: url( "images/image 21.jpeg");
+}
+
+.image22{
+    background-image: url( "images/image 22.webp");
+}
+
+.image23{
+    background-image: url( "images/image 23.jpeg");
+}
+
+.image24{
+    background-image: url( "images/image 24.jpeg");
+}
+
+.image25{
+    background-image: url( "images/image 25.jpeg");
+}
+
+.image26{
+    background-image: url( "images/image 26.jpeg");
+}
+
+.image27{
+    background-image: url( "images/image 27.jpeg");
+}
+
+.image28{
+    background-image: url( "images/image 28.jpeg");
+}
+
+.image29{
+    background-image: url( "images/image 29.jpeg");
+}
+
+.image30{
+    background-image: url( "images/image 30.jpeg");
+}
+
